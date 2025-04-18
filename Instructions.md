@@ -88,4 +88,4 @@ When you use MusiConvert, several files and directories are automatically create
 | `peers.txt`           | MusiConvert       | Stores known receiver names and IPs               | Project root       |
 | `credentials.env`     | User (manual)     | API credentials for Spotify/YouTube               | Project root       |
 | `client_secrets.json` | User (manual)     | Google API OAuth credentials                      | User-defined       |
-| `.gitignore`, `README.md`, etc. | User/manual | Standard repo/documentation files                | Project root       |
+| `.gitignore`, `README.md`, etc. | User (manual) | Standard repo/documentation files                | Project root       |
