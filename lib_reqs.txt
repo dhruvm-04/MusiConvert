@@ -1,0 +1,11 @@
+pip install spotipy
+pip install requests
+pip install cryptography
+pip install pywifi
+pip install ytmusicapi
+pip install google-auth-oauthlib
+pip install google-api-python-client
+pip install python-dotenv
+pip install rich
+pip install certifi
+pip install readchar
