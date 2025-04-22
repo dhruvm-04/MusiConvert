@@ -66,9 +66,14 @@ def select_json_file(directory="playlists"):
     if not os.path.exists(directory):
         os.makedirs(directory)
     files = [f for f in os.listdir(directory) if f.endswith('.json')]
+    
     if not files:
         console.print("[red]No playlist JSON files found in the directory.[/red]")
-        return None
+        manual_path = Prompt.ask("Enter full path to a JSON file (or press Enter to cancel)")
+        if manual_path and os.path.exists(manual_path) and manual_path.endswith('.json'):
+            return manual_path
+        else:
+            return None
 
     file_info = []
     for f in files:
